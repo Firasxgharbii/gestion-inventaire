@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{976CDEE7-0B69-4851-8FB2-844C23CA7521}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>renaissanceproject2025</RootNamespace>
+    <AssemblyName>renaissanceproject2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <GenerateManifests>false</GenerateManifests>
+    <StartupObject>renaissanceproject2025.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <!-- Références -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.6\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <!-- Fichiers source -->
+  <ItemGroup>
+    <Compile Include="AjoutAchatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutAchatForm.Designer.cs">
+      <DependentUpon>AjoutAchatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutFicheReceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutFicheReceptionForm.Designer.cs">
+      <DependentUpon>AjoutFicheReceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutFournisseurForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutFournisseurForm.Designer.cs">
+      <DependentUpon>AjoutFournisseurForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutMaterielForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutMaterielForm.Designer.cs">
+      <DependentUpon>AjoutMaterielForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutSortieStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutSortieStockForm.Designer.cs">
+      <DependentUpon>AjoutSortieStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BienvenueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BienvenueForm.Designer.cs">
+      <DependentUpon>BienvenueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeVerificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeVerificationForm.Designer.cs">
+      <DependentUpon>CodeVerificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItem.cs" />
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Ressources intégrées -->
+  <ItemGroup>
+    <EmbeddedResource Include="AjoutAchatForm.resx">
+      <DependentUpon>AjoutAchatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutFicheReceptionForm.resx">
+      <DependentUpon>AjoutFicheReceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutFournisseurForm.resx">
+      <DependentUpon>AjoutFournisseurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutMaterielForm.resx">
+      <DependentUpon>AjoutMaterielForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutSortieStockForm.resx">
+      <DependentUpon>AjoutSortieStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BienvenueForm.resx">
+      <DependentUpon>BienvenueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeVerificationForm.resx">
+      <DependentUpon>CodeVerificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <!-- Fichiers non compilés -->
+  <ItemGroup>
+    <Content Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <!-- Contenus à copier -->
+  <ItemGroup>
+    <Content Include="creation.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fond30ans.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="renaissance2025.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
